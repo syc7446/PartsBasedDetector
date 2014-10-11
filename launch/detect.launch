@@ -5,7 +5,7 @@
     <param name="/camera/depth_registration" type="bool" value="true"/>
 
     <!-- THE MODEL FILE TO LOAD -->
-    <arg name="model" default="$(find parts_based_detector)/models/Person_26parts.xml"/>
+    <arg name="model" default="$(find parts_based_detector)/model/Person_26parts.xml"/>
 
     <node pkg="parts_based_detector" name="parts_based_detector_node" type="parts_based_detector_node" output="screen">
       <param name="model" type="string" value="$(arg model)"/>
